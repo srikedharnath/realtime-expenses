@@ -35,7 +35,9 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+    "https://realtime-expense-prediction.vercel.app"
+]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

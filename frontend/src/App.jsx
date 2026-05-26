@@ -117,7 +117,7 @@ useState(
     const response =
       await axios.post(
 
-        "http://127.0.0.1:8000/login",
+        "https://university-expense-api.onrender.com/login",
 
         formData,
 
@@ -211,19 +211,19 @@ useState(
       ] = await Promise.all([
 
         axios.get(
-          "http://127.0.0.1:8000/expense-trends"
+          "https://university-expense-api.onrender.com/expense-trends"
         ),
 
         axios.get(
-          "http://127.0.0.1:8000/department-analysis"
+          "https://university-expense-api.onrender.com/department-analysis"
         ),
 
         axios.get(
-          "http://127.0.0.1:8000/feature-importance"
+          "https://university-expense-api.onrender.com/feature-importance"
         ),
 
         axios.get(
-          "http://127.0.0.1:8000/forecast"
+          "https://university-expense-api.onrender.com/forecast"
         )
       ]);
 
@@ -437,7 +437,7 @@ if (!isLoggedIn) {
 
       const response =
         await axios.post(
-  "http://127.0.0.1:8000/upload-dataset",
+  "https://university-expense-api.onrender.com/upload-dataset",
   uploadFormData,
   {
     headers: {
@@ -496,7 +496,7 @@ if (!isLoggedIn) {
     const response =
       await axios.post(
 
-  "http://127.0.0.1:8000/predict",
+  "https://university-expense-api.onrender.com/predict",
 
   formData,
 
